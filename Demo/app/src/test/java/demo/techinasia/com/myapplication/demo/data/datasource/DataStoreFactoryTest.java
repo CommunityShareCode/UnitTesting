@@ -47,8 +47,9 @@ public class DataStoreFactoryTest {
     @Test
     public void testCreateCloudDataStore() {
         final CloudDataStore mockCloudDataStore = mock(CloudDataStore.class);
+        final Model mockModel = mock(Model.class);
 
-        DataStoreFactory dataStoreFactory = spy(new DataStoreFactory(mMockDataStore, mMockCache) {
+        DataStoreFactory dataStoreFactory = new DataStoreFactory(mMockDataStore, mMockCache) {
             @Override
             protected DataStore createDiskDataStore(@NonNull Cache cache) {
                 return null;
@@ -58,11 +59,9 @@ public class DataStoreFactoryTest {
             protected DataStore createCloudDataStore(@NonNull Lazy cloudDataStore) {
                 return mockCloudDataStore;
             }
-        });
+        };
 
-        doReturn(false).when(dataStoreFactory).isCacheAvailable(null);
-
-        DataStore dataStore = dataStoreFactory.getDataStore(null);
+        DataStore dataStore = dataStoreFactory.getDataStore(mockModel);
 
         Assert.assertEquals(dataStore, mockCloudDataStore);
     }
@@ -70,8 +69,12 @@ public class DataStoreFactoryTest {
     @Test
     public void testCreateDiskDataStore() {
         final DataStore mockDiskDataStore = mock(DataStore.class);
+        final Model mockModel = mock(Model.class);
 
-        DataStoreFactory dataStoreFactory = spy(new DataStoreFactory(mMockDataStore, mMockCache) {
+        doReturn(true).when(mMockCache).isCached(any(Model.class));
+        doReturn(false).when(mMockCache).isExpired(any(Model.class));
+
+        DataStoreFactory dataStoreFactory = new DataStoreFactory(mMockDataStore, mMockCache) {
             @Override
             protected DataStore createDiskDataStore(@NonNull Cache cache) {
                 return mockDiskDataStore;
@@ -81,11 +84,9 @@ public class DataStoreFactoryTest {
             protected DataStore createCloudDataStore(@NonNull Lazy cloudDataStore) {
                 return null;
             }
-        });
+        };
 
-        doReturn(true).when(dataStoreFactory).isCacheAvailable(null);
-
-        DataStore dataStore = dataStoreFactory.getDataStore(null);
+        DataStore dataStore = dataStoreFactory.getDataStore(mockModel);
 
         Assert.assertEquals(dataStore, mockDiskDataStore);
     }
