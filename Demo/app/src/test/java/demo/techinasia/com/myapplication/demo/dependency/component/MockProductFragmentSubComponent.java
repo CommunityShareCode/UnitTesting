@@ -2,10 +2,10 @@ package demo.techinasia.com.myapplication.demo.dependency.component;
 
 import dagger.Subcomponent;
 import dagger.android.AndroidInjector;
-import demo.techinasia.com.myapplication.demo.presentation.view.ProductFragment;
-import demo.techinasia.com.myapplication.demo.qualifier.FragmentScope;
 import demo.techinasia.com.myapplication.demo.dependency.module.MockGetTopSellingProductModule;
 import demo.techinasia.com.myapplication.demo.dependency.module.MockProductModule;
+import demo.techinasia.com.myapplication.demo.presentation.view.ProductFragment;
+import demo.techinasia.com.myapplication.demo.qualifier.FragmentScope;
 
 /**
  * Created by fandygotama on 8/5/17.

@@ -7,7 +7,6 @@ import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
-import demo.techinasia.com.myapplication.demo.DemoApplication;
 
 /**
  * Created by fandygotama on 8/5/17.

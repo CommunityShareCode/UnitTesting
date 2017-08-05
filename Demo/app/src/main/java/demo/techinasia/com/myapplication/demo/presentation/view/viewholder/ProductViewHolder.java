@@ -8,8 +8,6 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.google.auto.factory.AutoFactory;
 
-import org.w3c.dom.Text;
-
 import demo.techinasia.com.myapplication.R;
 import demo.techinasia.com.myapplication.demo.data.model.ProductRecommendation;
 import demo.techinasia.com.myapplication.demo.presentation.view.Listener;

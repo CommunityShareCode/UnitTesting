@@ -1,8 +1,6 @@
 package demo.techinasia.com.myapplication.demo.presentation.view.viewholder;
 
-import android.content.Context;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import junit.framework.Assert;
@@ -14,7 +12,6 @@ import demo.techinasia.com.myapplication.R;
 import demo.techinasia.com.myapplication.demo.data.model.ProductRecommendation;
 import demo.techinasia.com.myapplication.demo.presentation.ApplicationTestCase;
 
-import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.mock;
 
 /**

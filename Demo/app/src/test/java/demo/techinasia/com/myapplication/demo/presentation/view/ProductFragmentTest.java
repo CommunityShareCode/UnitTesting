@@ -10,16 +10,14 @@ import junit.framework.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.robolectric.Robolectric;
-import org.robolectric.annotation.Config;
 
 import java.util.List;
 
 import demo.techinasia.com.myapplication.R;
 import demo.techinasia.com.myapplication.demo.data.model.Model;
 import demo.techinasia.com.myapplication.demo.data.model.ProductRecommendation;
-import demo.techinasia.com.myapplication.demo.presentation.ApplicationTestCase;
 import demo.techinasia.com.myapplication.demo.presentation.ActivityStub;
-import demo.techinasia.com.myapplication.demo.presentation.ApplicationStub;
+import demo.techinasia.com.myapplication.demo.presentation.ApplicationTestCase;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;

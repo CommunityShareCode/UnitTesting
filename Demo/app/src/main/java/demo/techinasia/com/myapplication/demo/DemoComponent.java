@@ -18,7 +18,6 @@ import dagger.Component;
 import demo.techinasia.com.myapplication.demo.dependency.component.AppComponent;
 import demo.techinasia.com.myapplication.demo.dependency.module.NetworkModule;
 import demo.techinasia.com.myapplication.demo.dependency.module.ProductActivityModule;
-import demo.techinasia.com.myapplication.demo.presentation.view.ProductActivity;
 import demo.techinasia.com.myapplication.demo.qualifier.ApplicationScope;
 
 @ApplicationScope

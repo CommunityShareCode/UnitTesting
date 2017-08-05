@@ -4,11 +4,11 @@ import android.support.annotation.NonNull;
 
 import java.io.IOException;
 
+import demo.techinasia.com.myapplication.demo.data.contract.ProductService;
 import demo.techinasia.com.myapplication.demo.data.model.Model;
 import demo.techinasia.com.myapplication.demo.data.model.ProductRecommendation;
 import demo.techinasia.com.myapplication.demo.data.model.Response;
 import demo.techinasia.com.myapplication.demo.data.model.TopSellingProductResponse;
-import demo.techinasia.com.myapplication.demo.data.contract.ProductService;
 import retrofit2.Call;
 
 /**

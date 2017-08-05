@@ -20,7 +20,6 @@ import demo.techinasia.com.myapplication.demo.domain.interactor.UseCase;
 import demo.techinasia.com.myapplication.demo.presentation.view.GetTopSellingProductView;
 
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.ArgumentMatchers.isNull;
 import static org.mockito.Mockito.doReturn;

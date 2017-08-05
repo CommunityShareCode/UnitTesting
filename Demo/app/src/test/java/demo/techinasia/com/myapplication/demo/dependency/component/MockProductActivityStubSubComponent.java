@@ -2,9 +2,9 @@ package demo.techinasia.com.myapplication.demo.dependency.component;
 
 import dagger.Subcomponent;
 import dagger.android.AndroidInjector;
-import demo.techinasia.com.myapplication.demo.qualifier.ActivityScope;
 import demo.techinasia.com.myapplication.demo.dependency.module.MockProductFragmentModule;
 import demo.techinasia.com.myapplication.demo.presentation.ActivityStub;
+import demo.techinasia.com.myapplication.demo.qualifier.ActivityScope;
 
 /**
  * Created by fandygotama on 8/5/17.

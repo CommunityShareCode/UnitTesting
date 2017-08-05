@@ -17,7 +17,6 @@ import demo.techinasia.com.myapplication.demo.domain.respository.Repository;
 import demo.techinasia.com.myapplication.demo.presentation.presenter.GetTopSellingProductPresenter;
 import demo.techinasia.com.myapplication.demo.presentation.presenter.GetTopSellingProductPresenterImpl;
 import demo.techinasia.com.myapplication.demo.qualifier.FragmentScope;
-import retrofit2.Retrofit;
 
 /**
  * Created by fandygotama on 8/5/17.

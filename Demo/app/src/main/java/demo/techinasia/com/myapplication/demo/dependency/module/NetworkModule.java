@@ -1,6 +1,5 @@
 package demo.techinasia.com.myapplication.demo.dependency.module;
 
-import android.os.Build;
 import android.support.annotation.NonNull;
 
 import java.io.IOException;

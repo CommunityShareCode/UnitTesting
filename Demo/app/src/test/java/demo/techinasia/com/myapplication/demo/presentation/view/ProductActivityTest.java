@@ -1,7 +1,6 @@
 package demo.techinasia.com.myapplication.demo.presentation.view;
 
 import android.content.Intent;
-import android.provider.MediaStore;
 import android.support.v4.app.Fragment;
 
 import junit.framework.Assert;
@@ -10,12 +9,9 @@ import org.junit.Before;
 import org.junit.Test;
 import org.robolectric.Robolectric;
 import org.robolectric.Shadows;
-import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowActivity;
 
-import demo.techinasia.com.myapplication.R;
 import demo.techinasia.com.myapplication.demo.data.model.ProductRecommendation;
-import demo.techinasia.com.myapplication.demo.presentation.ApplicationStub;
 import demo.techinasia.com.myapplication.demo.presentation.ApplicationTestCase;
 
 import static org.mockito.Mockito.mock;

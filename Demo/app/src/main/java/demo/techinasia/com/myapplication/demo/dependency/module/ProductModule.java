@@ -11,7 +11,6 @@ import demo.techinasia.com.myapplication.demo.presentation.view.ViewHolderFactor
 import demo.techinasia.com.myapplication.demo.presentation.view.adapter.ProductAdapter;
 import demo.techinasia.com.myapplication.demo.presentation.view.adapter.RecyclerViewAdapter;
 import demo.techinasia.com.myapplication.demo.presentation.view.viewholder.ProductViewHolderFactory;
-import demo.techinasia.com.myapplication.demo.qualifier.FragmentScope;
 import retrofit2.Retrofit;
 
 /**

@@ -3,7 +3,6 @@ package demo.techinasia.com.myapplication.demo.dependency.component;
 import dagger.Subcomponent;
 import dagger.android.AndroidInjector;
 import demo.techinasia.com.myapplication.demo.dependency.module.MockProductFragmentModule;
-import demo.techinasia.com.myapplication.demo.presentation.ActivityStub;
 import demo.techinasia.com.myapplication.demo.presentation.view.ProductActivity;
 import demo.techinasia.com.myapplication.demo.qualifier.ActivityScope;
 

@@ -10,12 +10,11 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
-import android.view.*;
+import android.view.LayoutInflater;
+import android.view.ViewGroup;
 
 import javax.inject.Inject;
 
-import dagger.android.AndroidInjection;
 import dagger.android.support.AndroidSupportInjection;
 import demo.techinasia.com.myapplication.R;
 import demo.techinasia.com.myapplication.demo.data.model.ProductRecommendation;

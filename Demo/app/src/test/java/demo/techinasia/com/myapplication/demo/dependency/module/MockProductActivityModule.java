@@ -7,9 +7,7 @@ import dagger.Module;
 import dagger.android.ActivityKey;
 import dagger.android.AndroidInjector;
 import dagger.multibindings.IntoMap;
-import demo.techinasia.com.myapplication.demo.dependency.component.MockProductActivityStubSubComponent;
 import demo.techinasia.com.myapplication.demo.dependency.component.MockProductActivitySubComponent;
-import demo.techinasia.com.myapplication.demo.presentation.ActivityStub;
 import demo.techinasia.com.myapplication.demo.presentation.view.ProductActivity;
 
 /**

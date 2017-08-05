@@ -12,7 +12,6 @@ import demo.techinasia.com.myapplication.demo.data.model.ProductRecommendation;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.verify;
 
 /**
  * Created by fandygotama on 8/5/17.

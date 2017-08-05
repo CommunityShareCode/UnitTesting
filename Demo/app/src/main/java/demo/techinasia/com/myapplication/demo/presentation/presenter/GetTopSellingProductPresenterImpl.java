@@ -10,7 +10,6 @@ import demo.techinasia.com.myapplication.demo.data.model.ProductRecommendation;
 import demo.techinasia.com.myapplication.demo.domain.interactor.TaskResponse;
 import demo.techinasia.com.myapplication.demo.domain.interactor.UseCase;
 import demo.techinasia.com.myapplication.demo.presentation.view.GetTopSellingProductView;
-import demo.techinasia.com.myapplication.demo.presentation.view.View;
 
 /**
  * Created by fandygotama on 8/5/17.

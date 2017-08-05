@@ -1,7 +1,6 @@
 package demo.techinasia.com.myapplication.demo.data.datasource;
 
 import android.support.annotation.CallSuper;
-import android.support.annotation.CheckResult;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 

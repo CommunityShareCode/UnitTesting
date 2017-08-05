@@ -7,8 +7,8 @@ import dagger.Module;
 import dagger.android.AndroidInjector;
 import dagger.android.support.FragmentKey;
 import dagger.multibindings.IntoMap;
-import demo.techinasia.com.myapplication.demo.presentation.view.ProductFragment;
 import demo.techinasia.com.myapplication.demo.dependency.component.MockProductFragmentSubComponent;
+import demo.techinasia.com.myapplication.demo.presentation.view.ProductFragment;
 
 /**
  * Created by fandygotama on 8/5/17.

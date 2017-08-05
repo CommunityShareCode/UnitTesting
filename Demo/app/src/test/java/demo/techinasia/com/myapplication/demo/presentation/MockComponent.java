@@ -3,8 +3,8 @@ package demo.techinasia.com.myapplication.demo.presentation;
 import dagger.Component;
 import demo.techinasia.com.myapplication.demo.dependency.component.AppComponent;
 import demo.techinasia.com.myapplication.demo.dependency.module.MockProductActivityModule;
-import demo.techinasia.com.myapplication.demo.qualifier.ApplicationScope;
 import demo.techinasia.com.myapplication.demo.dependency.module.MockProductActivityStubModule;
+import demo.techinasia.com.myapplication.demo.qualifier.ApplicationScope;
 
 /**
  * Created by fandygotama on 8/5/17.

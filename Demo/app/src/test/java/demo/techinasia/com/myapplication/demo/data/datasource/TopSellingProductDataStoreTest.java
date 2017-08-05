@@ -5,13 +5,12 @@ import org.junit.runner.RunWith;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 
+import demo.techinasia.com.myapplication.demo.data.contract.ProductService;
 import demo.techinasia.com.myapplication.demo.data.model.Model;
 import demo.techinasia.com.myapplication.demo.data.model.TopSellingProductResponse;
-import demo.techinasia.com.myapplication.demo.data.contract.ProductService;
 import retrofit2.Call;
 import retrofit2.Response;
 
-import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.mock;
