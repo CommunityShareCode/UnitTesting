@@ -1,4 +1,4 @@
-# UnitTesting
+# Tech in Asia PDC 2017 Demo
 
 A Full example of Android Unit Testing using JUnit, Mockito and Robolectric, with MVP and Dagger 2
 
