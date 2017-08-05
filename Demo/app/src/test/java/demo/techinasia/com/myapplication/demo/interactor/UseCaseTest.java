@@ -35,7 +35,7 @@ import static org.mockito.Mockito.mock;
 public class UseCaseTest {
 
     @Test
-    public void testLoadInBackground() throws Exception {
+    public void testLoadInBackgroundWithSuccessResponse() throws Exception {
         final Context mockContext = mock(Context.class);
         final Repository mockRepository = mock(Repository.class);
         final Model mockResponseData = mock(Model.class);
