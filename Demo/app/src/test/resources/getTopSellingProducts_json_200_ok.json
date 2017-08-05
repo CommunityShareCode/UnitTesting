@@ -1,0 +1,30 @@
+{
+  "getTopSellingProductsResponse": {
+    "productRecommendations": {
+      "product": [
+        {
+          "catalogName": "eBay",
+          "imageURL": "http://i.ebayimg.com/00/s/MTUwMFgxNTAw/z/WWwAAOSwiONYLavl/$_6.JPG?set_id=89040003C1",
+          "priceRangeMax": {
+            "@currencyId": "USD",
+            "__value__": 575.95
+          },
+          "priceRangeMin": {
+            "@currencyId": "USD",
+            "__value__": 552.95
+          },
+          "productId": {
+            "@type": "Reference",
+            "__value__": "223384827"
+          },
+          "productURL": "http://www.ebay.com/ctg/Canon-PowerShot-G7-X-Mark-II-20-1MP-Digital-Camera-Black/223384827",
+          "reviewCount": "0",
+          "title": "Canon PowerShot G7 X Mark II 20.1MP Digital Camera - Black"
+        }
+      ]
+    },
+    "ack": "Success",
+    "version": "1.5.0",
+    "timestamp": "2017-08-05T02:08:161.004Z"
+  }
+}
