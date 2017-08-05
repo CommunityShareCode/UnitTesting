@@ -127,7 +127,7 @@ public class DataStoreFactoryTest {
     }
 
     public DataStoreFactory getDataStoreFactory() {
-        return spy(new DataStoreFactory(mMockDataStore, mMockCache) {
+        return new DataStoreFactory(mMockDataStore, mMockCache) {
             @Override
             protected DataStore createDiskDataStore(@NonNull Cache cache) {
                 return null;
@@ -137,6 +137,6 @@ public class DataStoreFactoryTest {
             protected DataStore createCloudDataStore(@NonNull Lazy cloudDataStore) {
                 return super.createCloudDataStore(cloudDataStore);
             }
-        });
+        };
     }
 }
