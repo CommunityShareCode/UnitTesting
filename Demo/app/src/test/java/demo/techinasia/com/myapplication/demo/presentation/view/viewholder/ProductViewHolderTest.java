@@ -44,8 +44,8 @@ public class ProductViewHolderTest extends ApplicationTestCase {
 
         final ProductViewHolder viewHolder = new ProductViewHolder(stubViewGroup);
 
-        mockProduct.title = "Any Title";
-        mockProduct.priceRange = "Any Range";
+        mockProduct.catalogName = "Any Title";
+        mockProduct.price = "Any Range";
 
         viewHolder.onBindViewHolder(mockProduct);
 

@@ -36,17 +36,12 @@ public class TopSellingProductMapper implements ApiToModelMapper<ProductRecommen
         for (TopSellingProductResponse.Response.ProductRecommendation.Product productResponse : response.topSellingProductResponse.productRecommendation.products) {
             final ProductRecommendation.Product product = new ProductRecommendation.Product();
 
-            product.id = productResponse.productId.value;
+            product.id = productResponse.productId;
             product.catalogName = productResponse.catalogName;
             product.imageUrl = productResponse.imageUrl;
-            product.title = productResponse.title;
-            product.reviewCount = productResponse.reviewCount;
             product.url = productResponse.productUrl;
 
-            product.priceRange =
-                    productResponse.priceRangeMin.currencyId + " " + productResponse.priceRangeMin.value
-                    + " - "
-                    + productResponse.priceRangeMax.currencyId + " " + productResponse.priceRangeMax.value;
+            product.price = productResponse.buyItNowPrice.currencyId + " " + productResponse.buyItNowPrice.value;
 
             productRecommendation.products.add(product);
 

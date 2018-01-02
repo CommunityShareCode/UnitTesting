@@ -30,9 +30,7 @@ public class ProductRecommendation implements Model {
             public String catalogName;
             public String imageUrl;
             public String url;
-            public String priceRange;
-            public String reviewCount;
-            public String title;
+            public String price;
             public String id;
 
             @Override
@@ -41,9 +39,7 @@ public class ProductRecommendation implements Model {
                         "catalogName='" + catalogName + '\'' +
                         ", imageUrl='" + imageUrl + '\'' +
                         ", url='" + url + '\'' +
-                        ", priceRange='" + priceRange + '\'' +
-                        ", reviewCount='" + reviewCount + '\'' +
-                        ", title='" + title + '\'' +
+                        ", price='" + price + '\'' +
                         ", id='" + id + '\'' +
                         '}';
             }

@@ -55,7 +55,7 @@ public class ProductActivityTest extends ApplicationTestCase {
     public void testOnProductClicked() {
         final ProductRecommendation.Product mockProduct = mock(ProductRecommendation.Product.class);
 
-        mockProduct.title = "Any Title";
+        mockProduct.catalogName = "Any Title";
         mockProduct.url = "http://any.url";
 
         final ShadowActivity shadowActivity = Shadows.shadowOf(mActivity);

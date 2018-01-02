@@ -1,30 +1,33 @@
 {
-  "getTopSellingProductsResponse": {
-    "productRecommendations": {
-      "product": [
+  "getMostWatchedItemsResponse": {
+    "ack": "Success",
+    "version": "1.1.0",
+    "timestamp": "2018-01-02T05:01:986.027Z",
+    "itemRecommendations": {
+      "item": [
         {
-          "catalogName": "eBay",
-          "imageURL": "http://i.ebayimg.com/00/s/MTUwMFgxNTAw/z/WWwAAOSwiONYLavl/$_6.JPG?set_id=89040003C1",
-          "priceRangeMax": {
+          "itemId": "361122672377",
+          "title": "Apple iPhone 5S 16GB \"Factory Unlocked\" 4G LTE iOS Smartphone",
+          "subtitle": "",
+          "viewItemURL": "https://www.ebay.com/itm/Apple-iPhone-5S-16GB-Factory-Unlocked-4G-LTE-iOS-Smartphone/361122672377?_trkparms=mehot%3Dpp%26&_trksid=p0",
+          "globalId": "EBAY-US",
+          "timeLeft": "P1DT10H37M53S",
+          "primaryCategoryId": "15032",
+          "primaryCategoryName": "Cell Phones & Accessories",
+          "country": "US",
+          "imageURL": "http://thumbs.ebaystatic.com/d/l140/m/mZV7qvI0ZoeQMQSqD3t1fKA.jpg",
+          "shippingType": "NotSpecified",
+          "buyItNowPrice": {
             "@currencyId": "USD",
-            "__value__": 575.95
+            "__value__": "137.95"
           },
-          "priceRangeMin": {
+          "shippingCost": {
             "@currencyId": "USD",
-            "__value__": 552.95
+            "__value__": "0.00"
           },
-          "productId": {
-            "@type": "Reference",
-            "__value__": "223384827"
-          },
-          "productURL": "http://www.ebay.com/ctg/Canon-PowerShot-G7-X-Mark-II-20-1MP-Digital-Camera-Black/223384827",
-          "reviewCount": "0",
-          "title": "Canon PowerShot G7 X Mark II 20.1MP Digital Camera - Black"
+          "watchCount": "28397"
         }
       ]
-    },
-    "ack": "Success",
-    "version": "1.5.0",
-    "timestamp": "2017-08-05T02:08:161.004Z"
+    }
   }
 }

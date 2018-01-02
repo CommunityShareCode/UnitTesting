@@ -1,5 +1,6 @@
 package demo.techinasia.com.myapplication.demo.data.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
@@ -20,12 +21,12 @@ import java.util.List;
 
 public class TopSellingProductResponse implements Response {
 
-    @JsonProperty("getTopSellingProductsResponse")
+    @JsonProperty("getMostWatchedItemsResponse")
     public Response topSellingProductResponse;
 
     public static class Response {
 
-        @JsonProperty("productRecommendations")
+        @JsonProperty("itemRecommendations")
         public ProductRecommendation productRecommendation;
 
         @JsonProperty("ack")
@@ -39,34 +40,26 @@ public class TopSellingProductResponse implements Response {
 
         public static class ProductRecommendation {
 
-            @JsonProperty("product")
+            @JsonProperty("item")
             public List<Product> products;
 
+            @JsonIgnoreProperties(ignoreUnknown = true)
             public static class Product {
 
-                @JsonProperty("catalogName")
+                @JsonProperty("title")
                 public String catalogName;
 
                 @JsonProperty("imageURL")
                 public String imageUrl;
 
-                @JsonProperty("priceRangeMax")
-                public PriceRange priceRangeMax;
+                @JsonProperty("buyItNowPrice")
+                public PriceRange buyItNowPrice;
 
-                @JsonProperty("priceRangeMin")
-                public PriceRange priceRangeMin;
+                @JsonProperty("itemId")
+                public String productId;
 
-                @JsonProperty("productId")
-                public ProductId productId;
-
-                @JsonProperty("productURL")
+                @JsonProperty("viewItemURL")
                 public String productUrl;
-
-                @JsonProperty("reviewCount")
-                public String reviewCount;
-
-                @JsonProperty("title")
-                public String title;
 
                 public static class PriceRange {
 
@@ -85,33 +78,14 @@ public class TopSellingProductResponse implements Response {
                     }
                 }
 
-                public static class ProductId {
-
-                    @JsonProperty("@type")
-                    public String type;
-
-                    @JsonProperty("__value__")
-                    public String value;
-
-                    @Override
-                    public String toString() {
-                        return "ProductId{" +
-                                "type='" + type + '\'' +
-                                ", value='" + value + '\'' +
-                                '}';
-                    }
-                }
-
                 @Override
                 public String toString() {
                     return "Product{" +
                             "catalogName='" + catalogName + '\'' +
                             ", imageUrl='" + imageUrl + '\'' +
-                            ", priceRangeMax=" + priceRangeMax +
-                            ", priceRangeMin=" + priceRangeMin +
-                            ", url='" + productUrl + '\'' +
-                            ", reviewCount='" + reviewCount + '\'' +
-                            ", title='" + title + '\'' +
+                            ", buyItNowPrice=" + buyItNowPrice +
+                            ", productId='" + productId + '\'' +
+                            ", productUrl='" + productUrl + '\'' +
                             '}';
                 }
             }

@@ -35,11 +35,19 @@ android {
         exclude 'plugin.xml'
         exclude 'plugin.properties'
     }
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
 }
 
-android.applicationVariants.all {
-    def aptOutputDir = new File(buildDir, "generated/source/apt/${it.unitTestVariant.dirName}")
-    it.unitTestVariant.addJavaSourceFoldersToModel(aptOutputDir)
+android.applicationVariants.all { variant ->
+    if (variant.buildType.name == "debug") {
+        def aptOutputDir = new File(buildDir, "generated/source/apt/${variant.unitTestVariant.dirName}")
+        variant.unitTestVariant.addJavaSourceFoldersToModel(aptOutputDir)
+        assembleDebug.finalizedBy('assembleDebugUnitTest')
+    }
 }
 
 dependencies {
@@ -57,7 +65,7 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-jackson:2.3.0'
     implementation 'com.squareup.okhttp3:logging-interceptor:3.6.0'
 
-    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.github.bumptech.glide:glide:4.4.0'
 
     // Auto Factory
     implementation "com.google.auto.factory:auto-factory:1.0-beta5"
@@ -75,11 +83,11 @@ dependencies {
     annotationProcessor 'com.google.dagger:dagger-compiler:2.14.1'
     compileOnly 'javax.annotation:jsr250-api:1.0'
 
-    testCompile 'junit:junit:4.12'
-    testCompile 'org.mockito:mockito-core:2.8.47'
-    testCompile 'org.powermock:powermock-module-junit4:1.7.0'
-    testCompile 'org.powermock:powermock-api-mockito2:1.7.0'
-    testCompile 'org.robolectric:robolectric:3.4.2'
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.mockito:mockito-core:2.8.47'
+    testImplementation 'org.powermock:powermock-module-junit4:1.7.0'
+    testImplementation 'org.powermock:powermock-api-mockito2:1.7.0'
+    testImplementation 'org.robolectric:robolectric:3.6.1'
 
     testAnnotationProcessor 'com.google.dagger:dagger-compiler:2.14.1'
 }

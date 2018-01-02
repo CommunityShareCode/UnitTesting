@@ -45,16 +45,15 @@ public class TopSellingProductMapperTest {
         final ProductRecommendation.Product product = products.get(0);
 
         Assert.assertEquals("Success", productRecommendation.ack);
-        Assert.assertEquals("1.5.0", productRecommendation.version);
-        Assert.assertEquals("2017-08-05T02:08:161.004Z", productRecommendation.timestamp);
+        Assert.assertEquals("1.1.0", productRecommendation.version);
+        Assert.assertEquals("2018-01-02T05:01:986.027Z", productRecommendation.timestamp);
 
-        Assert.assertEquals("eBay", product.catalogName);
-        Assert.assertEquals("http://i.ebayimg.com/00/s/MTUwMFgxNTAw/z/WWwAAOSwiONYLavl/$_6.JPG?set_id=89040003C1", product.imageUrl);
-        Assert.assertEquals("USD 552.95 - USD 575.95", product.priceRange);
-        Assert.assertEquals("223384827", product.id);
-        Assert.assertEquals("http://www.ebay.com/ctg/Canon-PowerShot-G7-X-Mark-II-20-1MP-Digital-Camera-Black/223384827", product.url);
-        Assert.assertEquals("Canon PowerShot G7 X Mark II 20.1MP Digital Camera - Black", product.title);
-        Assert.assertEquals("0", product.reviewCount);
+        Assert.assertEquals("Apple iPhone 5S 16GB \"Factory Unlocked\" 4G LTE iOS Smartphone", product.catalogName);
+        Assert.assertEquals("http://thumbs.ebaystatic.com/d/l140/m/mZV7qvI0ZoeQMQSqD3t1fKA.jpg", product.imageUrl);
+        Assert.assertEquals("USD 137.95", product.price);
+        Assert.assertEquals("361122672377", product.id);
+        Assert.assertEquals("https://www.ebay.com/itm/Apple-iPhone-5S-16GB-Factory-Unlocked-4G-LTE-iOS-Smartphone/361122672377?_trkparms=mehot%3Dpp%26&_trksid=p0", product.url);
+
     }
 
     @CheckResult

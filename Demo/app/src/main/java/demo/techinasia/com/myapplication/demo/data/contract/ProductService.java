@@ -20,6 +20,6 @@ import retrofit2.http.GET;
 
 public interface ProductService {
 
-    @GET("MerchandisingService?OPERATION-NAME=getTopSellingProducts&SERVICE-NAME=MerchandisingService&SERVICE-VERSION=1.5.0&RESPONSE-DATA-FORMAT=JSON&REST-PAYLOAD&maxResults=50")
+    @GET("MerchandisingService?OPERATION-NAME=getMostWatchedItems&SERVICE-NAME=MerchandisingService&SERVICE-VERSION=1.5.0&RESPONSE-DATA-FORMAT=JSON&REST-PAYLOAD&maxResults=50")
     Call<TopSellingProductResponse> getTopSellingProducts();
 }

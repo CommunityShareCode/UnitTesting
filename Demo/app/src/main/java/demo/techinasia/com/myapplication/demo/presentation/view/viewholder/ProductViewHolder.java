@@ -6,6 +6,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.google.auto.factory.AutoFactory;
 
 import demo.techinasia.com.myapplication.R;
@@ -36,17 +37,20 @@ public class ProductViewHolder extends BaseViewHolder<ProductRecommendation.Prod
     public ProductViewHolder(ViewGroup parent) {
         super(LayoutInflater.from(parent.getContext()).inflate(R.layout.view_product_item, parent, false));
 
-        imgProduct = (ImageView) itemView.findViewById(R.id.product_image);
-        tvTitle = (TextView) itemView.findViewById(R.id.product_title);
-        tvPrice = (TextView) itemView.findViewById(R.id.product_price);
+        imgProduct = itemView.findViewById(R.id.product_image);
+        tvTitle = itemView.findViewById(R.id.product_title);
+        tvPrice = itemView.findViewById(R.id.product_price);
     }
 
     @Override
     public void onBindViewHolder(ProductRecommendation.Product model) {
-        Glide.with(itemView.getContext()).load(model.imageUrl).fitCenter().into(imgProduct);
+        Glide.with(itemView.getContext())
+                .load(model.imageUrl)
+                .apply(new RequestOptions().fitCenter())
+                .into(imgProduct);
 
-        tvTitle.setText(model.title);
-        tvPrice.setText(model.priceRange);
+        tvTitle.setText(model.catalogName);
+        tvPrice.setText(model.price);
     }
 
     @Override

@@ -69,7 +69,7 @@ public class ProductActivity extends AppCompatActivity implements
     public void onProductClicked(@NonNull ProductRecommendation.Product product) {
         final Intent intent = new Intent(this, ProductDetailActivity.class);
 
-        intent.putExtra(ProductDetailActivity.TITLE, product.title);
+        intent.putExtra(ProductDetailActivity.TITLE, product.catalogName);
         intent.putExtra(ProductDetailActivity.URL, product.url);
 
         startActivity(intent);
